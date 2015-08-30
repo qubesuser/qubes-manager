@@ -665,7 +665,7 @@ class VmIPItem(QTableWidgetItem):
         self.setFlags(Qt.ItemIsSelectable|Qt.ItemIsEnabled)
 
         self.vm = vm
-        self.ip = self.vm.ip
+        self.ip = self.vm.ip_in_netvm
         if self.ip:
             self.setText(self.ip)
         else:
